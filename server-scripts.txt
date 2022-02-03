@@ -1,0 +1,14 @@
+// for production
+
+  "scripts":{
+    "build":"babel server.js --out-dir build",
+    "start":"npm run build && nodemon build/server.js",
+    "serve":"node build/server.js"
+  }
+
+// for development
+
+  "scripts":{
+    "start":"babel server.js -w --out-dir build",
+    "dev":"nodemon build/server.js"
+  }
